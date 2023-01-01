@@ -1,0 +1,376 @@
+@font-face {
+    font-family: TT-interphase;
+    src: url(fonts/TT\ Interphases\ Pro\ Trial\ Regular.ttf);
+}
+body {
+    font-family: TT-interphase;
+    background-color: aliceblue;
+    margin: 0px;
+    height: 200vh;
+    width: 100%;
+}
+#topButton {
+    display: center; 
+    position: fixed; 
+    bottom: 20px; 
+    left: 1430px;
+    z-index: 99; 
+    border-style: solid;
+    border-color: #F58800;
+    outline: none; 
+    background-color: rgb(255, 255, 255); 
+    color: #F58800; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 30px; 
+    width: 55px;
+    font-size: 18px; 
+    background-color: transparent;
+    transition: 250ms;
+  }
+
+#topButton:hover {
+    background-color: #F58800; 
+    color: #051721;
+    border-color: #051721;
+}
+nav {
+    background-color: #051721;
+    opacity: 0.8;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    top: 0;
+    z-index: 99;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 3vh;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+.intro {
+    width: 100%;
+    height: 100vh;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    top: -220px;
+    object-fit: contain;
+    z-index: -1;
+
+}
+.intro-text {
+    color: aliceblue;
+    width: 100px;   
+    height: 50px;
+    font-size: 120px;
+    z-index: 1;
+    position: absolute;
+    left: 750px;
+    bottom: 350px;
+}
+.intro-text-year {
+    color: aliceblue;
+    width: 100px;
+    height: 50px;
+    font-size: 120px;
+    z-index: 1;
+    position: absolute;
+    left: 1060px;
+    bottom: 250px;
+}
+.featured {
+    height: 100vh;
+    width: 100%;
+    background: #051721;
+}
+h1 {
+    color: white;
+    margin: 0;
+    width: 238px;
+    padding-top: 70px;
+    padding-right: 0px;
+    padding-left: 100px;
+}
+.featured-car {
+    float: right;
+    padding-top: 10px;
+    right: 200px;
+    size: 200%; 
+    height: 600px;
+    position: relative;
+    width: 100%;
+}
+.car-featured {
+    position: relative;
+    left: 900px;
+    height: 600px;
+}
+.graphics-slides {
+    position: absolute;
+    left: 919px;
+    bottom: 8px;
+    height: 100vh;
+    width: 800px;
+}
+.horizontal-graphics {
+    display: flex;
+    width: 100%;
+
+}
+.graphics-one, .graphics-two{ 
+    padding-top: 54px;
+    position: relative;
+    top: 6px;
+    
+}
+.graphics-one {
+    width: 600px;
+    position: relative;
+}
+.graphics-two {
+    width: 600px;
+    position: relative;
+    right: 20px;
+    object-fit: contain;
+}
+.featured-title {
+    color: white;
+    padding-top: 100px;
+    padding-right: 800px;
+    padding-left: 100px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    bottom: 500px;
+}
+.featured-text {
+    color: white;
+    padding-top: 10px;
+    padding-right: 800px;
+    padding-left: 100px;
+    margin: 0;
+    font-size: 16px;
+    position: relative;
+    bottom: 500px;
+}
+.learn-more {
+    border-style: solid;
+    border-color: #F58800;
+    border-radius: 3px;
+    background-color: #051721;
+    color: white;
+    font-family: TT-interphase;
+    font-size: large;
+    height: 50px;
+    width: 220px;
+    margin-top: 100px;
+    margin-left: 100px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+    position: relative;
+    bottom: 500px;
+}
+
+.learn-more:hover {
+    background-color: #F58800; 
+}
+
+.categories {
+    height: 100vh;
+    width: 100%;
+    background: #051721;
+}
+.horizontal-graphics-two {
+    display: flex;
+    width: 100%;
+    position: relative;
+    bottom: 3px;
+    
+}
+.graphics-three, .graphics-four{ 
+    padding-top: 54px;
+    position: relative;
+    top: 6px;
+    left: -55px;
+    
+}
+.graphics-three {
+    width: 600px;
+    position: relative;
+}
+.graphics-four {
+    width: 600px;
+    position: relative;
+    right: 30px;
+    object-fit: contain;
+    left: -75px;
+    
+}
+.category-title {
+    color: white;
+    margin: 0;
+    padding-top: 70px;
+    padding-right: 0px;
+    padding-left: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    background-color: #051721;
+    z-index: 1;
+}
+.wrapper {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width:98%;
+}
+.column {
+    border: 4px solid #F58800;
+    display: inline-flex;
+    float: left;
+    width: 30%;
+    height: 470.89px;
+    padding: 0;
+    margin: 10px;
+    position: relative;
+    top: 180px;
+    transition: 240ms;
+}
+.column:hover {
+    transform:scale(1.05);
+    z-index: 2;
+    
+}
+.row { 
+    padding-left: 100px;
+    content: "";
+    display: table;
+    clear: both;
+    margin-left: 5px;
+}
+
+.text-category {
+    list-style: none;
+    display: inline-flex;
+    color: white;
+    position: relative;
+    top: 720px;
+    
+}
+.sports-text {
+    position: relative;
+    left: -470px;
+    margin: 0;
+}
+.muscle-text {
+    position: relative;
+    left: -122px;
+    margin: 0;
+}
+
+.vintage-text {
+    position: relative;
+    left: 215px;
+    margin: 0;
+}
+.galleries {
+    height: 100vh;
+    width: 100%;
+    background: #051721;
+}
+.gallery-title {
+    display: flex;
+    width: 180px;
+    position: relative;
+    bottom: 3px;
+    left:22px;
+    
+}
+.graphics-five, .graphics-six {
+    padding-top: 54px;
+    position: relative;
+    top: 6px;
+    
+}
+.graphics-five {
+    width: 600px;
+    position: relative;
+    left: -20px;
+}
+.graphics-six {
+    width: 600px;
+    position: relative;
+    left: -35px;
+    object-fit: contain;
+}
+.horizontal-graphics-three {
+    display: flex;
+    width: 100%;
+    position: relative;
+    bottom: 3px;   
+}
+.gallery-column {
+    position: relative;
+    top: -1050px;
+}
+.image-boss {
+    width: 420px;
+    height: 500px;
+    position: relative;
+    top: -550px;
+    left: 980px;
+}
+.image-demon {
+    width: 380px;
+    height: 280px;
+    position: relative;
+    top: -1050px;
+    left: 600px;   
+}
+.image-cayman {
+    width: 380px;
+    height: 220px;
+    position: relative;
+    top: -1050px;
+    left: 600px; 
+}
+.image-nineoneone {
+    width: 450px;
+    height: 280px;
+    position: relative;
+    top: -1550px;
+    left: 150px; 
+}
+.image-huracan {
+    width: 450px;
+    height: 220px;
+    position: relative;
+    top: -1550px;
+    left: 150px; 
+}
+.image-boss:hover, .image-demon:hover, .image-cayman:hover, .image-nineoneone:hover, .image-huracan:hover {
+    border-color: #F58800;
+    border-style: solid;
+    border-radius: 3px;
+}
